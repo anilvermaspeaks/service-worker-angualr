@@ -12,7 +12,8 @@
           "/manifest.webmanifest",
           "/*.css",
           "/*.js"
-        ]
+        ],
+        "urls": ["addurl","addurl2"]
       }
     },
     {
@@ -24,6 +25,18 @@
           "/assets/**",
           "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
         ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name":"apiData",
+      "urls": ["apiUrlsWIthEndPoint1", "apiUrlsWIthEndPoint2"],
+      "cacheConfig": {
+        "maxSize": 6,
+        "maxAge": "3d",
+        "timeout": "10s",
+        "strategy": "performance"
       }
     }
   ]
